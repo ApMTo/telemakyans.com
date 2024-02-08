@@ -1,0 +1,347 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(https://wallpapercave.com/wp/wp2945065.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+}
+
+/* .header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: 1s;
+  z-index: 1;
+} */
+
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  box-shadow: 0px 0px 15px white;
+}
+
+.logo a {
+  color: rgb(211, 204, 204);
+  font-size: 26px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+@keyframes headingTextH1 {
+  from {
+    color: white;
+  }
+
+  to {
+    color: orange;
+  }
+}
+
+@keyframes headingTextSpan {
+  from {
+    color: orange;
+  }
+
+  to {
+    color: white;
+  }
+}
+
+@keyframes headingText {
+  0% {
+    opacity: 0.5;
+  }
+
+  40% {
+    opacity: 0.7;
+  }
+
+  70% {
+    opacity: 0.8;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.heading h1 {
+  padding-top: 150px;
+  padding-left: 50px;
+  font-size: 60px;
+  color: white;
+  animation: headingTextH1 6s infinite alternate;
+}
+
+.heading span {
+  color: orange;
+  animation: headingTextSpan 6s infinite alternate;
+}
+
+.heading p {
+  animation: headingText 4s infinite alternate;
+}
+
+@keyframes headingImage {
+  from {
+    margin-top: 150px;
+  }
+
+  to {
+    margin-bottom: 50px;
+  }
+}
+
+.heading img {
+  margin-top: 100px;
+  /* margin-left: 35px; */
+  animation: headingImage 2s infinite alternate;
+}
+
+.heading p {
+  color: white;
+  padding-left: 50px;
+  opacity: 0.7;
+}
+
+.heading button {
+  width: 150px;
+  height: 45px;
+  margin-left: 50px;
+  border: none;
+  border-radius: 15px;
+  background-color: black;
+  box-shadow: 0px 0px 15px rgb(165, 27, 147);
+  font-size: 19px;
+  transition: 1s;
+}
+
+.heading button a {
+  color: rgb(147, 25, 163);
+  text-decoration: none;
+  transition: 1s;
+}
+
+.why-choose-us {
+  margin-top: 200px;
+  width: 95%;
+  margin-left: 2.5%;
+}
+
+.why-choose-us-heading {
+  width: 100%;
+  color: rgb(255, 255, 255);
+  padding-top: 25px;
+  text-align: center;
+}
+
+.why-choose-us-info h3 {
+  color: orange;
+  font-size: 25px;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.why-choose-us-info p {
+  color: rgb(201, 198, 198);
+  text-align: center;
+  padding-top: 25px;
+  transform: scale(0.9);
+  transition: 1s;
+}
+
+.why-choose-us-info p:hover {
+  transform: scale(1);
+  color: rgb(255, 255, 255);
+}
+
+.why-choose-us-end h3 {
+  color: red;
+  text-align: left;
+}
+
+@media only screen and (max-width: 463px) {
+  .heading img {
+    width: 250px;
+  }
+}
+
+.characteristics {
+  margin-top: 250px;
+}
+
+.characteristics-heading {
+  text-align: center;
+  color: white;
+}
+
+.characteristics-body {
+  margin-top: 60px;
+  background-color: rgb(rgb(43, 40, 40));
+  border-radius: 25px;
+  box-shadow: 0px 0px 25px wheat;
+}
+
+.characteristics-body h4 {
+  color: rgb(255, 255, 255);
+  padding-top: 25px;
+  padding-left: 20px;
+}
+
+.characteristics-body span {
+  font-size: 30px;
+}
+
+.characteristics-body ul li {
+  font-size: 20px;
+  color: beige;
+  opacity: 0.8;
+}
+
+.cards {
+  margin-top: 350px;
+}
+
+.container-card {
+  margin: 0 auto;
+  width: 350px;
+  background-color: white;
+  transform: scale(0.8);
+  transition: 1s;
+  opacity: 0.9;
+}
+
+.container-card:hover {
+  transform: scale(0.9);
+  opacity: 1;
+}
+
+.container-name {
+  padding-left: 25px;
+  font-weight: bolder;
+}
+
+.container-info {
+  opacity: 1;
+  font-weight: bold;
+  padding-left: 25px;
+}
+
+.container-btn button {
+  width: 150px;
+  height: 45px;
+  margin-left: 50%;
+  margin-bottom: 25px;
+  border: none;
+  border-radius: 15px;
+  background-color: black;
+  box-shadow: 0px 0px 15px rgb(165, 27, 147);
+  font-size: 19px;
+}
+
+.container-btn button a {
+  color: rgb(147, 25, 163);
+  text-decoration: none;
+  transition: 1s;
+  background: none;
+}
+
+.footer h3 {
+  text-align: center;
+  padding-top: 150px;
+  padding-bottom: 20px;
+  font-size: 15px;
+  color: white;
+}
+
+.footer a {
+  color: brown;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.footer a:hover {
+  color: brown;
+  text-decoration: underline;
+}
+
+.contact-us {
+  margin: 0 auto;
+  margin-top: 300px;
+}
+
+.contact-us h2 {
+  text-align: center;
+  color: white;
+  font-size: 32;
+}
+
+.material-symbols-outlined {
+  vertical-align: middle;
+}
+
+.contact-us-info h4 {
+  color: white;
+  padding-top: 50px;
+}
+
+.contact-us-info span {
+  color: white;
+}
+
+@media only screen and (max-width: 1199px) {
+  .hasce {
+    margin-left: 70%;
+  }
+
+  .xz {
+    margin-left: 15%;
+  }
+
+  .card3 {
+    margin-left: 55%;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  .hasce {
+    margin-left: 0%;
+  }
+
+  .xz {
+    margin-left: 0%;
+  }
+
+  .card3 {
+    margin-left: 15%;
+  }
+}
+
+.navbar {
+  width: 100%;
+  position: fixed;
+}
+
+.navbar-brand {
+  padding-left: 50px;
+}
+
+.navbar-nav {
+  margin: 0 auto;
+}
+
+.nav-link {
+  margin-left: 50px;
+}
+
+.navbar-toggler {
+  margin-right: 25px;
+}
