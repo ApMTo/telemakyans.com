@@ -305,10 +305,6 @@
     .xz {
       margin-left: 15%;
     }
-  
-    .card3 {
-      margin-left: 55%;
-    }
   }
   
   @media only screen and (max-width: 769px) {
@@ -318,10 +314,6 @@
   
     .xz {
       margin-left: 0%;
-    }
-  
-    .card3 {
-      margin-left: 15%;
     }
   }
   
